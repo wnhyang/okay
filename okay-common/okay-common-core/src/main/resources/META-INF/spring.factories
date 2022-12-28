@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  org.okay4cloud.okay.common.core.config.JacksonConfiguration,\
+  org.okay4cloud.okay.common.core.config.RedisTemplateConfiguration,\
+  org.okay4cloud.okay.common.core.config.RestTemplateConfiguration,\
+  org.okay4cloud.okay.common.core.config.WebMvcConfiguration
+
