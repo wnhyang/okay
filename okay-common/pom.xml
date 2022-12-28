@@ -14,5 +14,6 @@
     <modules>
         <module>okay-common-bom</module>
         <module>okay-common-core</module>
+        <module>okay-common-mybatis</module>
     </modules>
 </project>
