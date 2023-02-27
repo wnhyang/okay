@@ -1,0 +1,21 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 123.60.165.53:8848
+        namespace: @nacosNamespace@
+        group: @nacosGroup@
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: @nacosNamespace@
+        group: @nacosGroup@
+  config:
+    import:
+      - optional:nacos:${spring.application.name}-${spring.profiles.active}.yaml
+  profiles:
+    active: @profiles.active@
+

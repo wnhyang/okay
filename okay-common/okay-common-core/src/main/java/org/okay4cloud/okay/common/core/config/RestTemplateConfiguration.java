@@ -5,13 +5,15 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author: wnhyang
- * @create: 2022-12-28 15:47
+ * @author wnhyang
+ * @date 2023/2/23
  **/
 @Configuration(proxyBeanMethods = false)
 public class RestTemplateConfiguration {
+
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
 }

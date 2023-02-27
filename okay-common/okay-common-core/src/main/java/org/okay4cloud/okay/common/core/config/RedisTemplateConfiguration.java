@@ -10,8 +10,8 @@ import org.springframework.data.redis.core.*;
 import org.springframework.data.redis.serializer.RedisSerializer;
 
 /**
- * @author: wnhyang
- * @create: 2022-12-28 15:42
+ * @author wnhyang
+ * @date 2023/2/23
  **/
 @EnableCaching
 @Configuration(proxyBeanMethods = false)
@@ -53,4 +53,5 @@ public class RedisTemplateConfiguration {
     public ZSetOperations<String, Object> zSetOperations(RedisTemplate<String, Object> redisTemplate) {
         return redisTemplate.opsForZSet();
     }
+
 }

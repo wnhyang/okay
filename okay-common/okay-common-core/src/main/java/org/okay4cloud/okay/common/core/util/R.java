@@ -7,12 +7,12 @@ import org.okay4cloud.okay.common.core.constant.CommonConstants;
 import java.io.Serializable;
 
 /**
- * @author: wnhyang
- * @create: 2022-12-28 16:11
+ * @author wnhyang
+ * @date 2023/2/15
  **/
 @ToString
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Accessors(chain = true)
 public class R<T> implements Serializable {
 
@@ -65,5 +65,4 @@ public class R<T> implements Serializable {
         apiResult.setMsg(msg);
         return apiResult;
     }
-
 }

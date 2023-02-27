@@ -17,13 +17,14 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 /**
- * @author: wnhyang
- * @create: 2022-12-28 15:35
+ * @author wnhyang
+ * @date 2023/2/23
  **/
 @Configuration(proxyBeanMethods = false)
 @ConditionalOnClass(ObjectMapper.class)
 @AutoConfigureBefore(JacksonAutoConfiguration.class)
 public class JacksonConfiguration {
+
     @Bean
     @ConditionalOnMissingBean
     public Jackson2ObjectMapperBuilderCustomizer customizer() {
@@ -35,4 +36,6 @@ public class JacksonConfiguration {
             builder.modules(new OkayJavaTimeModule());
         };
     }
+
 }
+

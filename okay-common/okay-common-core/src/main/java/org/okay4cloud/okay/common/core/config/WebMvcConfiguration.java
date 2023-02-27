@@ -13,12 +13,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import static org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication.Type.SERVLET;
 
 /**
- * @author: wnhyang
- * @create: 2022-12-28 15:57
+ * @author wnhyang
+ * @date 2023/2/23
  **/
 @Configuration(proxyBeanMethods = false)
 @ConditionalOnWebApplication(type = SERVLET)
 public class WebMvcConfiguration implements WebMvcConfigurer {
+
     /**
      * 增加GET请求参数中时间类型转换 {@link org.okay4cloud.okay.common.core.jackson.OkayJavaTimeModule}
      * <ul>
@@ -26,8 +27,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
      * <li>yyyy-MM-dd -> LocalDate</li>
      * <li>yyyy-MM-dd HH:mm:ss -> LocalDateTime</li>
      * </ul>
-     *
-     * @param registry 格式
+     * @param registry
      */
     @Override
     public void addFormatters(FormatterRegistry registry) {
@@ -40,7 +40,6 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
     /**
      * 系统国际化文件配置
-     *
      * @return MessageSource
      */
     @Bean
@@ -49,4 +48,5 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
         messageSource.setBasename("classpath:i18n/messages");
         return messageSource;
     }
+
 }

@@ -19,12 +19,11 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * java 8 时间默认序列化
- *
- * @author: wnhyang
- * @create: 2022-12-28 15:37
+ * @author wnhyang
+ * @date 2023/2/23
  **/
 public class OkayJavaTimeModule extends SimpleModule {
+
     public OkayJavaTimeModule() {
         super(PackageVersion.VERSION);
 
@@ -48,4 +47,5 @@ public class OkayJavaTimeModule extends SimpleModule {
         // Instant 反序列化
         this.addDeserializer(Instant.class, InstantDeserializer.INSTANT);
     }
+
 }

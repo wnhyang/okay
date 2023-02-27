@@ -19,8 +19,8 @@ import java.sql.SQLException;
  * <p>
  * 重构分页插件，当 size 小于 0 时，直接设置 0，防止错误查表
  *
- * @author: wnhyang
- * @create: 2022-12-28 10:05
+ * @author wnhyang
+ * @date 2022-12-28 10:05
  **/
 @EqualsAndHashCode(callSuper = true)
 @Data

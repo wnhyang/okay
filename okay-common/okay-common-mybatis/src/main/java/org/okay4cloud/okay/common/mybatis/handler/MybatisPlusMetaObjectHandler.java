@@ -15,8 +15,8 @@ import java.util.Optional;
 /**
  * Mybatis-Plus 自动填充配置
  *
- * @author: wnhyang
- * @create: 2022-12-27 18:21
+ * @author wnhyang
+ * @date 2022-12-27 18:21
  **/
 @Slf4j
 public class MybatisPlusMetaObjectHandler implements MetaObjectHandler {
