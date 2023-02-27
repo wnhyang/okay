@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author: wnhyang
- * @create: 2022-12-28 10:21
+ * @author wnhyang
+ * @date 2022-12-28 10:21
  * <p>
  * mybatis-plus 统一配置
  **/

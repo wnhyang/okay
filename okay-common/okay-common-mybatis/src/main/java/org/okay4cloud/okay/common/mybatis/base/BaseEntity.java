@@ -9,8 +9,8 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @author: wnhyang
- * @create: 2022-12-27 18:20
+ * @author wnhyang
+ * @date 2022-12-27 18:20
  **/
 @Getter
 @Setter
