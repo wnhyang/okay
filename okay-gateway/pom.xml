@@ -57,11 +57,6 @@
             <groupId>org.okay4cloud</groupId>
             <artifactId>okay-common-core</artifactId>
         </dependency>
-        <!--接口文档-->
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-webflux-ui</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
