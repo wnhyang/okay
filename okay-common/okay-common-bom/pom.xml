@@ -24,7 +24,6 @@
         <dynamic-ds.version>3.5.1</dynamic-ds.version>
         <disruptor.version>3.4.4</disruptor.version>
         <maven.plugins.version>2.8</maven.plugins.version>
-
         <security.oauth.version>2.1.8.RELEASE</security.oauth.version>
         <fastjson.version>1.2.78</fastjson.version>
         <spring.checkstyle.plugin>0.0.29</spring.checkstyle.plugin>
@@ -75,6 +74,11 @@
             <dependency>
                 <groupId>org.okay4cloud</groupId>
                 <artifactId>okay-upms-api</artifactId>
+                <version>${okay.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.okay4cloud</groupId>
+                <artifactId>okay-common-log</artifactId>
                 <version>${okay.common.version}</version>
             </dependency>
             <!--稳定版本，替代spring security bom内置-->
