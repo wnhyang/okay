@@ -9,6 +9,11 @@ public interface ServiceNameConstants {
     String AUTH_SERVICE = "okay-auth";
 
     /**
+     * UMPS模块
+     */
+    String UMPS_SERVICE = "okay-upms-biz";
+
+    /**
      * 短链接服务名
      */
     String SHORTLINK_SERVICE = "okay-shortLink-service";

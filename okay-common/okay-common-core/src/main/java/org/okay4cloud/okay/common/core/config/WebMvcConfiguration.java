@@ -27,6 +27,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
      * <li>yyyy-MM-dd -> LocalDate</li>
      * <li>yyyy-MM-dd HH:mm:ss -> LocalDateTime</li>
      * </ul>
+     *
      * @param registry
      */
     @Override
@@ -40,6 +41,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
     /**
      * 系统国际化文件配置
+     *
      * @return MessageSource
      */
     @Bean
