@@ -25,7 +25,6 @@ public enum LogTypeEnum {
      */
     ERROR("9", "错误日志");
 
-
     /**
      * 类型
      */
