@@ -57,9 +57,19 @@ public interface CommonConstants {
     Integer SUCCESS = 0;
 
     /**
+     * 默认成功信息
+     */
+    String SUCCESS_MSG = "success";
+
+    /**
      * 失败标记
      */
     Integer FAIL = 1;
+
+    /**
+     * 默认失败信息
+     */
+    String FAIL_MSG = "fail";
 
     /**
      * 验证码前缀

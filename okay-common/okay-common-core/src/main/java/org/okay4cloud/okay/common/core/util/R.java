@@ -31,11 +31,11 @@ public class R<T> implements Serializable {
     private T data;
 
     public static <T> R<T> ok() {
-        return restResult(null, CommonConstants.SUCCESS, null);
+        return restResult(null, CommonConstants.SUCCESS, CommonConstants.SUCCESS_MSG);
     }
 
     public static <T> R<T> ok(T data) {
-        return restResult(data, CommonConstants.SUCCESS, null);
+        return restResult(data, CommonConstants.SUCCESS, CommonConstants.SUCCESS_MSG);
     }
 
     public static <T> R<T> ok(T data, String msg) {
@@ -43,7 +43,7 @@ public class R<T> implements Serializable {
     }
 
     public static <T> R<T> failed() {
-        return restResult(null, CommonConstants.FAIL, null);
+        return restResult(null, CommonConstants.FAIL, CommonConstants.FAIL_MSG);
     }
 
     public static <T> R<T> failed(String msg) {
@@ -51,7 +51,7 @@ public class R<T> implements Serializable {
     }
 
     public static <T> R<T> failed(T data) {
-        return restResult(data, CommonConstants.FAIL, null);
+        return restResult(data, CommonConstants.FAIL, CommonConstants.FAIL_MSG);
     }
 
     public static <T> R<T> failed(T data, String msg) {
